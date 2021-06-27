@@ -1,0 +1,3 @@
+<h3>Component Statistics</h3>
+<button type="button" (click)="loadStatistics()" [disabled]="!(isLoadStatistics$ | async)">Load statistics</button>
+<p>Preload: {{statistics}}</p>

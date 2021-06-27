@@ -1,0 +1,18 @@
+<h3>Component Login</h3>
+<dl>
+  <dt>User</dt>
+  <dd>
+    <select [(ngModel)]="info.user">
+      <option value="">---</option>
+      <option *ngFor="let user of users">{{user}}</option>
+    </select>
+  </dd>
+  <dt>Role</dt>
+  <dd>
+    <select [(ngModel)]="info.role">
+      <option value="">---</option>
+      <option *ngFor="let role of roles">{{role}}</option>
+    </select>
+  </dd>
+</dl>
+<button (click)="auth()" type="button">Auth</button>

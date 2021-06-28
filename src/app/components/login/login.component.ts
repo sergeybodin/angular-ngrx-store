@@ -41,7 +41,7 @@ export class LoginComponent {
       this.store$.dispatch(InfoActions.authRole({role: this.info.role}));
       this.store$.dispatch(InfoActions.isLoadStatistics({isLoadStatistics: true}));
     } else {
-      alert('Выбирите пользователя и роль');
+      alert('Select user and role');
     }
   }
 
